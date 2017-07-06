@@ -2,6 +2,26 @@
 body {
 	background: #f8f8f8;
 }
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+header {
+	height: 150px;
+	background: url(img/OMEA_Header.png) no-repeat center bottom;
+}
+footer {
+	height: 150px;
+	background: #e2e2f7;
+}
+footer p {
+	margin: 65px 50px 0 0;
+	text-align: right;
+}
+hr {
+	margin-top: 0;
+	margin-bottom: 0;
+}
 h1,
 .information h2 {
 	background: #afeeee;
@@ -19,31 +39,57 @@ h1,
 }
 .logotip {
 	width: 200px;
+	margin: 0 0 0 25px;
+	float: left;
+}
+.clearfix {
+	clear: both;
 }
 .menu {
 	list-style-type: none;
+	padding: 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
 }
-ul.menu a:hover {
-	font-size: 19px;
-	color: #1cac78;
-}
-ul.menu a {
+.menu a {
 	font-weight: normal;
 	font-size: 18px;
-	color: #7d7f7d;
+	color: #ffffff;
 	text-decoration: none;
+	background-color: #1fcecb;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 40px;
 }
-ul.menu li {
+.menu li {
 	font-size: 18px;
 	font-weight: bold;
-	color: #7d7f7d;
+	color: #ffffff;
+	background-color: #1fcecb;
+	display: block;
+	width: 33%;
+	text-align: center;
+	line-height: 40px;
+	border: 1px solid #f8f8f8;
+	margin-top: 65px;
+}
+.menu a:hover {
+	background-color: #99f0ee;
+	color: #000000;
+}
+.container_catalog {
+	display: flex;
+	justify-content: space-between;
 }
 .product h2 {
 	color: #000000;
 	font-size: 18px;
 	font-weight: 400;
 	background: #eaeaea;
-	width: 250px;
+	text-align: center;
 }
 .product .description {
 	font-size: 16px;
@@ -51,12 +97,14 @@ ul.menu li {
 	color: #484343;
 	font-weight: 400;
 	text-align: left;
+
 }
 .product .shortdescription {
 	font-size: 14px;
 	line-height: 16px;
 	color: #707070;
 	font-style: italic;
+	text-align: center;
 }
 .product figure p:first-letter {
 	color: #03c03c;
@@ -69,59 +117,90 @@ ul.menu li {
 	font-weight: 500;
 	list-style-image: url("img/gear.png");
 }
+.container_catalog .product_img {
+	height: 300px;
+}
+.product .product_img {
+	width: 450px;
+}
 .product_img {
 	border: solid;
 	border-color: #cacd58 #5faf8a #b9cea5 #aab238;
+	float: left;
 }
 .product_img:hover {
 	border: none;
 	margin: 3px;
 }
-fieldset {
+.buy input[type="submit"] {
+	width: 150px;
+	height: 60px;
+	border: 1px solid transparent;
+	background-color: #7fc7ff;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #ffff00;
+	font-weight: bold;
+	border-radius: 5px;
+	outline: none;
+	margin: 150px 0 0 285px;
+}
+.buy input[type="submit"]:hover {
+	background-color: #0bda51;
+	color: black;
+}
+.buy input[type="submit"]:active {
+	background-color: #66ff00;
+}
+.feedback fieldset {
 	border: solid;
 	border-color: #5faf8a;
 }
-legend {
+.feedback legend {
 	font-size: 19px;
 	line-height: 16px;
 	color: #707070;
 	font-style: italic
 }
-input[type="text"],
-input[type="email"] {
+.feedback input[type="text"],
+.feedback input[type="email"] {
 	width: 200px; height: 25px;
 	border-width: 1px;
 	border-color: #5faf8a #b9cea5;
 	font-size: 14px;
 	color: #002868;
 }
-textarea {
+.feedback textarea {
 	border: outset;
 	border-width: 1px;
 	border-color: #5faf8a #b9cea5;
 	width: 370px; height: 150px;
 }
-.box {
+.feedback .box {
 	margin-bottom: 5px;
 }
-p a:visited {
-	color: #228b22;
-}
-input[type="email"]:focus {
+.feedback input[type="email"]:focus {
 	color: #0000ff;
 	background-color: #e0ffff;
 }
-input[type="text"],
-textarea {
+.feedback input[type="text"],
+.feedback textarea {
 	text-transform: capitalize;
 }
 /* ::placeholder с одним двоеточием не работатет!
 Валидацию не проходит, так как этот псевдоэлемент
 есть только в сырой версии спецификации,
 НО ПОДДЕРЖИВАЕТСЯ ВСЕМИ БРАУЗЕРАМИ*/
-input[type="text"]::placeholder,
-textarea::placeholder {
+.feedback input[type="text"]::placeholder,
+.feedback textarea::placeholder {
 	text-transform: none;
+}
+.map {
+	width: 100%;
+	height: 374px;
+}
+.container_catalog p a:visited {
+	color: #228b22;
 }
 table,
 td,
@@ -130,6 +209,9 @@ th {
 }
 table {
 	border-collapse: collapse;
+}
+caption {
+	font-size: 18px;
 }
 td,
 th {
@@ -142,9 +224,6 @@ th {
 }
 td {
 	background: #f2fcfb;
-}
-caption {
-	font-size: 18px;
 }
 thead tr{
 	height: 50px;
