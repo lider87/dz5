@@ -1,0 +1,151 @@
+
+body {
+	background: #f8f8f8;
+}
+h1,
+.information h2 {
+	background: #afeeee;
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 2px;
+	font-family: "Courier";
+	border-radius: 50%;
+}
+.welcome {
+	background: #ccffcc;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 45%;
+}
+.logotip {
+	width: 200px;
+}
+.menu {
+	list-style-type: none;
+}
+ul.menu a:hover {
+	font-size: 19px;
+	color: #1cac78;
+}
+ul.menu a {
+	font-weight: normal;
+	font-size: 18px;
+	color: #7d7f7d;
+	text-decoration: none;
+}
+ul.menu li {
+	font-size: 18px;
+	font-weight: bold;
+	color: #7d7f7d;
+}
+.product h2 {
+	color: #000000;
+	font-size: 18px;
+	font-weight: 400;
+	background: #eaeaea;
+	width: 250px;
+}
+.product .description {
+	font-size: 16px;
+	line-height: 24px;
+	color: #484343;
+	font-weight: 400;
+	text-align: left;
+}
+.product .shortdescription {
+	font-size: 14px;
+	line-height: 16px;
+	color: #707070;
+	font-style: italic;
+}
+.product figure p:first-letter {
+	color: #03c03c;
+	font-size: 26px;
+}
+.product .characteristic {
+	font-size: 18px;
+	line-height: 20px;
+	color: #2F4F4F;
+	font-weight: 500;
+	list-style-image: url("img/gear.png");
+}
+.product_img {
+	border: solid;
+	border-color: #cacd58 #5faf8a #b9cea5 #aab238;
+}
+.product_img:hover {
+	border: none;
+	margin: 3px;
+}
+fieldset {
+	border: solid;
+	border-color: #5faf8a;
+}
+legend {
+	font-size: 19px;
+	line-height: 16px;
+	color: #707070;
+	font-style: italic
+}
+input[type="text"],
+input[type="email"] {
+	width: 200px; height: 25px;
+	border-width: 1px;
+	border-color: #5faf8a #b9cea5;
+	font-size: 14px;
+	color: #002868;
+}
+textarea {
+	border: outset;
+	border-width: 1px;
+	border-color: #5faf8a #b9cea5;
+	width: 370px; height: 150px;
+}
+.box {
+	margin-bottom: 5px;
+}
+p a:visited {
+	color: #228b22;
+}
+input[type="email"]:focus {
+	color: #0000ff;
+	background-color: #e0ffff;
+}
+input[type="text"],
+textarea {
+	text-transform: capitalize;
+}
+/* ::placeholder с одним двоеточием не работатет!
+Валидацию не проходит, так как этот псевдоэлемент
+есть только в сырой версии спецификации,
+НО ПОДДЕРЖИВАЕТСЯ ВСЕМИ БРАУЗЕРАМИ*/
+input[type="text"]::placeholder,
+textarea::placeholder {
+	text-transform: none;
+}
+table,
+td,
+th {
+	border: 1px solid black;
+}
+table {
+	border-collapse: collapse;
+}
+td,
+th {
+	width: 150px;
+	height: 30px;
+	text-align: center;
+}
+th {
+	background: #c6f5f0;
+}
+td {
+	background: #f2fcfb;
+}
+caption {
+	font-size: 18px;
+}
+thead tr{
+	height: 50px;
+}

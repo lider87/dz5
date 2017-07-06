@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакты</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body class="information">
+	<header>
+		<img class="logotip" src="img/logotip.jpg" alt="Моноколесник">
+		<ul class="menu">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html" >Каталог</a></li>
+			<li>Контакты</li>
+		</ul>
+	</header>
+	<hr>
+	<h2>Контакты</h2>
+	<p>Наш пункт самовывоза находиться по&nbsp;адресу:<br>
+		г.&nbsp;Москва, м. Текстильщики, ул.&nbsp;Грайвороновская, д.20<br>
+		Телефон: +7 (800) 00-88-80<br>
+		Email: monocolesnik@ymail.ru</p>
+	<div>
+		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b662536ab02697f363ea9b5ad147a0ba343b5b44b8bbc06c32ab96115eb70cb&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+	</div>
+	<h2>Напишите нам</h2>
+	<form action="mailto:monocolesnik@ymail.ru" method="post" name="feedback">
+		<fieldset>
+			<legend>Форма оратной связи</legend>
+			<div class="box">
+				<input type="text" placeholder="Введите ФИО" name="name" required>
+			</div>
+			<div class="box">
+				<input type="email" placeholder="Введите email" name="email" required>
+			</div>
+			<div class="box">
+				<input type="text" placeholder="Тема обращения" name="subject" required>
+			</div>
+			<div class="box">
+				<textarea cols="60" rows="10"  name="comment" placeholder="Введите комментарий" required></textarea>
+			</div>
+			<div>
+				<input type="submit" value="Отправить">
+			</div>
+		</fieldset>
+	</form>
+	<hr>
+	<footer>
+		<p>&copy; Все права защищены</p>
+	</footer>
+</body>
+</html>
